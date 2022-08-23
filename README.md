@@ -16,3 +16,14 @@ This tracks the udemy course: "Angular - The Complete Guide (2022 Edition)"
 	
 Setup Bootstrap CSS locally in root for basic styling: \
 `npm install --save bootstrap@3`
+
+## Start the Angular project 
+1. Navigate into root directory with your terminal
+2. start dev server `ng serve`
+
+## create new component in cli:
+`ng generate component comp_name`
+or (short cut) `ng g c comp_name`
+
+## first app
+### preview:
