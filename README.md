@@ -25,5 +25,12 @@ Setup Bootstrap CSS locally in root for basic styling: \
 `ng generate component comp_name`
 or (short cut) `ng g c comp_name`
 
+## General shortcuts:
+Comment HTML lines: `ctrl + k + c`
+Format Type Script: `Shift + Alt + F`
+
+## Knowledge
+Lists of all properties and events of the element: Googling for `YOUR_ELEMENT properties`  or `YOUR_ELEMENT events` should yield nice results.
+
 ## first app
 ### preview:
