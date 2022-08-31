@@ -15,7 +15,10 @@ This tracks the udemy course: "Angular - The Complete Guide (2022 Edition)"
 `ng serve` 
 	
 Setup Bootstrap CSS locally in root for basic styling: \
-`npm install --save bootstrap@3`
+(did not work) \
+`npm install --save bootstrap@3` \
+this did work for me: \
+`ng add @ng-bootstrap/ng-bootstrap` 
 
 ## Start the Angular project 
 1. Navigate into root directory with your terminal
@@ -25,12 +28,34 @@ Setup Bootstrap CSS locally in root for basic styling: \
 `ng generate component comp_name`
 or (short cut) `ng g c comp_name`
 
-## General shortcuts:
-Comment HTML lines: `ctrl + k + c`
-Format Type Script: `Shift + Alt + F`
+## Workflow shortcuts:
+* Comment HTML lines: `ctrl + k + c` \
+* Format Type Script: `Shift + Alt + F`
 
 ## Knowledge
 Lists of all properties and events of the element: Googling for `YOUR_ELEMENT properties`  or `YOUR_ELEMENT events` should yield nice results.
+
+## Angular important concepts:
+* In HTML code, everything in between " " is Typescript code
+
+### Basics:
+
+#### String Inerpolation 
+
+#### Property Binding 
+* In html, any variables in squared brackets [] are binded
+#### Event Binding / Two-way Binding
+
+#### Directives
+
+#### ngif
+* structural directive, changes the structure of our DOM based o a condition. 
+* Example: This will only be displayed in the browser if "display" = true
+`<p *ngIf="display"> Secret password = tuna </p>`
+#### ngStyle
+
+#### ngFor
+
 
 ## first app
 ### preview:
