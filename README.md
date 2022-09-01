@@ -10,8 +10,8 @@ This tracks the udemy course: "Angular - The Complete Guide (2022 Edition)"
 	https://angular.io/cli
 
 ## Setup a Angular project:
-`ng new my-first-project` \
-`cd my-first-project --no-strict` \
+`ng new my-first-project --no-strict` \
+`cd my-first-project` \
 `ng serve` 
 	
 Setup Bootstrap CSS locally in root for basic styling: \
@@ -71,16 +71,15 @@ Lists of all properties and events of the element: Googling for `YOUR_ELEMENT pr
 ```
 
 #### ngFor
-* Makes a list of Components where directive *ngFor is placed. logs is a array of numbers, for each array it will display  a new div element styled based on log >= 5 \
+* Makes a list of Components where directive *ngFor is placed. logs is a array of numbers, for each array it will display a new div element styled based on i >= 5. i is directly assigned by let in ngFor statement. \
 * Example: 
 ```
 {
 	<div 
-		*ngFor="let log of logs"
-		[ngStyle]="{backgroundColor: log >= 5 ? 'blue' : 'transparent'}" 
-		[ngClass]="{'white-text': log >= 5}"
-	> 
-		{{log}}
+		*ngFor="let log of logs; let i = index"
+		[ngStyle]="{backgroundColor: i >= 5 ? 'blue' : 'transparent'}" 
+		[ngClass]="{'white-text': i >= 5}"
+	> {{log}}
 	</div>
 }
 ```

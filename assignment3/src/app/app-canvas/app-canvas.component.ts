@@ -13,7 +13,7 @@ export class AppCanvasComponent implements OnInit {
 
   display = true;
   password = "tuna";
-  logs: number[] = [];
+  logs: string[] = [];
   
   constructor() { 
   
@@ -24,6 +24,6 @@ export class AppCanvasComponent implements OnInit {
 
   onDisplay() {
     this.display = !this.display;
-    this.logs.push(this.logs.length + 1);
+    this.logs.push(Date());
   }
 }
