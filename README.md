@@ -78,8 +78,9 @@ Lists of all properties and events of the element: Googling for `YOUR_ELEMENT pr
 	<div 
 		*ngFor="let log of logs; let i = index"
 		[ngStyle]="{backgroundColor: i >= 5 ? 'blue' : 'transparent'}" 
-		[ngClass]="{'white-text': i >= 5}"
-	> {{log}}
+		[ngClass]="{'white-text': i >= 5}"> 
+		
+		{{log}}
 	</div>
 }
 ```
