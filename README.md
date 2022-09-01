@@ -44,20 +44,44 @@ Lists of all properties and events of the element: Googling for `YOUR_ELEMENT pr
 
 #### Property Binding 
 * In html, any variables in squared brackets [] are binded
+
 #### Event Binding / Two-way Binding
 
 #### Directives
 
 #### ngif
 * Structural directive, changes the structure of our DOM based o a condition. 
-* Example: This will only be displayed in the browser if "display" = true \
-`<p *ngIf="display"> Secret password = tuna </p>`
+* Example: This will only be displayed in the browser if "display" = true 
+```
+{
+	<p *ngIf="display"> 
+		Secret password = tuna 
+	</p>
+}
+```
+
 #### ngStyle
-* Attribute directive, dont change the structure of the DOM, it only changes the element they where placed on. \
-`<p [ngStyle]="{backgroundColor: 'green'}"> this background paragraph is green </p>`
+* Attribute directive, dont change the structure of the DOM, it only changes the element they where placed on.
+```
+{
+	<p [ngStyle]="{backgroundColor: 'green'}> 
+		this background paragraph is green 
+	</p>
+}
+```
 
 #### ngFor
+* Makes a list of Components where directive *ngFor is placed. logs is a array of numbers, for each array it will display  a new div element styled based on log >= 5 \
+* Example: 
+```
+{
+	<div 
+		*ngFor="let log of logs"
+		[ngStyle]="{backgroundColor: log >= 5 ? 'blue' : 'transparent'}" 
+		[ngClass]="{'white-text': log >= 5}"
+	> 
+		{{log}}
+	</div>
+}
+```
 
-
-## first app
-### preview:
