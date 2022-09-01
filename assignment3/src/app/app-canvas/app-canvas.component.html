@@ -1,28 +1,31 @@
-
 <div class="container">
     <div class="row">
         <div class="col-xs-12">
-            <ol> 
-                <li>Add a button  which says Display Details:</li> 
-                <button 
-                    class="btn btn-primary"
-                    (click)="onDisplay()"
-                    >
+            <ol>
+                <li>Add a button which says Display Details:</li>
+                <button class="btn btn-primary" (click)="onDisplay()">
                     Display details
                 </button>
-                
-                <p *ngIf="display"> Secret password = tuna </p>
-                <p> Logged: {{ narray }} </p>
 
-                <li>Add a paragraph with any content of your choice: </li>
+                <p *ngIf="display"> Secret password = tuna </p>
                 
+                <p>{{logs}}</p>
+
+                <p [ngStyle]="{backgroundColor: getColor()}" 
+                [ngClass]="{custom_white_css_class: getWhite()}"
+                *ngFor="let log of logs">
+                    Logged </p>
+                
+                <li>Add a paragraph with any content of your choice: </li>
+
                 <li>Toggle the displaying of that paragraph with the button created in the first step</li>
 
-                <li>Log all button clicks in an array and output that array below the secret paragraph (maybe log a timestamp or simply an incrementing number)</li>
-                
-                <li>Starting at the 5th log intem, give all future log items a blue background (via ngStyle) and white color (ngClass)</li>
+                <li>Log all button clicks in an array and output that array below the secret paragraph (maybe log a
+                    timestamp or simply an incrementing number)</li>
+
+                <li>Starting at the 5th log intem, give all future log items a blue background (via ngStyle) and white
+                    color (ngClass)</li>
             </ol>
         </div>
     </div>
 </div>
-    

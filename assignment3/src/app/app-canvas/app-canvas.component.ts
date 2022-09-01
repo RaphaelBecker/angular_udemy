@@ -3,17 +3,21 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-app-canvas',
   templateUrl: './app-canvas.component.html',
-  styleUrls: ['./app-canvas.component.css']
+  styleUrls: ['./app-canvas.component.css'],
+  styles: [`
+  .custom_white_css_class {
+    color: white;
+    }`]
 })
 export class AppCanvasComponent implements OnInit {
 
   display = true;
   password = "tuna";
   n = 0;
-  narray: number[] = new Array()
+  logs = [0]
 
   constructor() { 
-    this.narray.push(this.n)
+  
   }
 
   ngOnInit(): void {
@@ -21,14 +25,31 @@ export class AppCanvasComponent implements OnInit {
 
   onDisplay() {
     this.n = this.n + 1;
-    this.narray.push(this.n)
+    this.logs.push(this.n);
 
     if (this.display == true) {
       this.display = false;
     }
     else {
-      this.display = true
+      this.display = true;
     }
   }
 
+  getColor() {
+    if (this.logs.length > 5) {
+      return 'green';
+    }
+    else {
+      return 'white';
+  }
+}
+
+  getWhite() {
+    if (this.logs.length > 5) {
+      return true;
+    }
+    else {
+      return false;
+    }
+  }
 }

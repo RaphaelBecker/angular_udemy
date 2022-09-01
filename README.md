@@ -49,10 +49,12 @@ Lists of all properties and events of the element: Googling for `YOUR_ELEMENT pr
 #### Directives
 
 #### ngif
-* structural directive, changes the structure of our DOM based o a condition. 
-* Example: This will only be displayed in the browser if "display" = true
+* Structural directive, changes the structure of our DOM based o a condition. 
+* Example: This will only be displayed in the browser if "display" = true \
 `<p *ngIf="display"> Secret password = tuna </p>`
 #### ngStyle
+* Attribute directive, dont change the structure of the DOM, it only changes the element they where placed on. \
+`<p [ngStyle]="{backgroundColor: 'green'}"> this background paragraph is green </p>`
 
 #### ngFor
 
