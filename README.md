@@ -16,8 +16,12 @@ This tracks the udemy course: "Angular - The Complete Guide (2022 Edition)"
 	
 Setup Bootstrap CSS locally in root for basic styling: \
 (did not work) \
-`npm install --save bootstrap@3` \
-this did work for me: \
+* `npm install --save bootstrap@3` 
+* add installed styles package in 'angular.json' in project root.
+Add "node_modules/bootstrap/dist/css/bootstrap.min.css" under "styles": section.
+* Rerun project with `ng serve`
+
+Alternative but not recommended: 
 `ng add @ng-bootstrap/ng-bootstrap` 
 
 ## Start the Angular project 
@@ -25,8 +29,9 @@ this did work for me: \
 2. start dev server `ng serve`
 
 ## create new component in cli:
-`ng generate component comp_name`
+* `ng generate component comp_name`
 or (short cut) `ng g c comp_name`
+* Add argument to avoid generating pec file: `--skip-tests` 
 
 ## Workflow shortcuts:
 * Comment HTML lines: `ctrl + k + c` \
@@ -85,3 +90,7 @@ Lists of all properties and events of the element: Googling for `YOUR_ELEMENT pr
 }
 ```
 
+## Course project
+
+### Planning the project: 
+![Planning the app project](planning_the_App.png)
