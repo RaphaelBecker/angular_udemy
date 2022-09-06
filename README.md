@@ -46,6 +46,8 @@ Lists of all properties and events of the element: Googling for `YOUR_ELEMENT pr
 ### Basics:
 
 #### String Inerpolation 
+Iside double {} brackets, a property can be placed from the .ts file
+* `<h4 class="list-group-item-text">{{ recipe.description }}</h4>`
 
 #### Property Binding 
 * In html, any variables in squared brackets [] are binded
